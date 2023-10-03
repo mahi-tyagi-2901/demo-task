@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Test</title>
+</head>
+
+<body>
+
+    <style>
+        .pop-up {
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .pop-up .pop-up-img img {
+            width: 455px;
+            height: 542px;
+        }
+
+        .pop-up .pop-up-details h3 {
+            color: #030303;
+            font-family: Satoshi;
+            font-size: 11.2px;
+            font-weight: 900;
+            line-height: 16.8px;
+            letter-spacing: 4px;
+        }
+
+        .pop-up .pop-up-details h4 {
+            background: linear-gradient(180deg, #1E1E1E 0%, rgba(33, 33, 33, 0.00) 207.14%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: Satoshi;
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: -0.356px;
+        }
+
+        .pop-up .pop-up-details h5 {
+            background: linear-gradient(180deg, #1E1E1E 0%, rgba(33, 33, 33, 0.00) 175.93%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: Satoshi;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.356px;
+        }
+
+        input {
+            border-radius: 60px;
+            border: 1px solid #D8D8D8;
+            background: #FFF;
+            box-shadow: 0px 5px 6px 0px rgba(19, 18, 66, 0.12);
+            padding: 14px 55px;
+            margin-bottom: 15px;
+        }
+
+        .pop-up .pop-up-details .subs-btn {
+            margin-top: 40px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 44px;
+            background: linear-gradient(0deg, #DEBB0A 0%, #FFD814 100%);
+            box-shadow: 0px 2.21613px 9.60323px 0px rgba(153, 129, 0, 0.36), 0px 4px 0px 0px #947E10;
+        }
+
+        .pop-up .pop-up-details .subs-btn button {
+            border: none;
+            background: none;
+            color: #000;
+            font-family: Satoshi;
+            font-size: 20.6px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24.64px;
+        }
+    </style>
+
+    <div class='pop-up'>
+        <div class='pop-up-img'>
+            <img src="Frame 9.png">
+        </div>
+        <div class='pop-up-details'>
+            <h3>join the Digital Revolution</h3>
+            <h4>Let's Connect </h4>
+            <h5>and Create Amazing Experiences!</h5>
+            <div class='pop-up-signup'>
+                <div class='name'>
+                    <input placeholder="Your name">
+                </div>
+                <div class='email'>
+                    <input placeholder="Enter your email">
+                </div>
+            </div>
+            <div class='subs-btn'>
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.pop-up .pop-up-details .subs-btn').addEventListener('click', () => {
+  var name =  document.querySelector('.pop-up-signup .name input').value;
+    var email = document.querySelector('.pop-up-signup .email input').value;
+       if(name == '' || email == '') {
+           alert('invalid name or email');
+       }
+    else {
+        
+    }
+});
+    </script>
+</body>
+
+</html>
