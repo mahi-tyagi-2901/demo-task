@@ -11,10 +11,11 @@
 
     <style>
         .pop-up {
-            display: grid;
-            grid-template-columns: auto auto;
+            display: flex;
+            grid-template-columns: 50% 50%;
+            column-gap: 30px;
             align-items: center;
-            justify-content: space-evenly;
+            justify-content: space-between;
         }
 
         .pop-up .pop-up-img img {
@@ -105,15 +106,15 @@
 
     <script>
         document.querySelector('.pop-up .pop-up-details .subs-btn').addEventListener('click', () => {
-  var name =  document.querySelector('.pop-up-signup .name input').value;
-    var email = document.querySelector('.pop-up-signup .email input').value;
-       if(name == '' || email == '') {
-           alert('invalid name or email');
-       }
-    else {
-        
-    }
-});
+            var name = document.querySelector('.pop-up-signup .name input').value;
+            var email = document.querySelector('.pop-up-signup .email input').value;
+            if (name == '' || email == '') {
+                alert('invalid name or email');
+            }
+            else {
+
+            }
+        });
     </script>
 </body>
 
