@@ -12,10 +12,15 @@
     <style>
         .pop-up {
             display: flex;
-            grid-template-columns: 50% 50%;
             column-gap: 30px;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
+            margin-top: 60px;
+            width: 930px;
+            height: 542px;
+            border-radius: 7px;
+            background: #FFF;
+            margin: 40px auto;
         }
 
         .pop-up .pop-up-img img {
@@ -110,9 +115,6 @@
             var email = document.querySelector('.pop-up-signup .email input').value;
             if (name == '' || email == '') {
                 alert('invalid name or email');
-            }
-            else {
-
             }
         });
     </script>
